@@ -23,7 +23,7 @@
             </thead>
             <tbody ng-repeat="artista in artistas">
                 <td>{{artista.artista}}</td>
-                <td>{{artista.albums['album']}}</td>
+                <td>{{artista.albums}}</td>
                 <td></td>
                 <td></td>
                 <td></td>

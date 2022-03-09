@@ -7,7 +7,7 @@ app.controller('playlistCtrl', function ($scope, $http, $window) {
             url: base_url + "main/get_all_info",
         }).then(function (response) {
             $scope.artistas = response.data.artistas;
-            //console.log($scope.artistas);
+            console.log($scope.artistas);
         });
     };
 

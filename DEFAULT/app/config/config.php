@@ -8,8 +8,8 @@ define('dir_system', '../../system/');
 
 define('TIPO', 'mysql');
 define('HOST', 'localhost');
-define('DB', 'practica1');
-define('USER', 'root');
-define('PASSWORD', 'hola12345');
+define('DB', 'mydb');
+define('USER', 'usuario');
+define('PASSWORD', 'password');
 define('CHARSET', 'utf8mb4');
 define('PRODUCTION', false);
