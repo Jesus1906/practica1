@@ -38,9 +38,10 @@ class Main extends Controller
                 $album['canciones'] = $this->model->get_all_canciones_by_album_id($album['id']);
             }
         }
-        $this->view_array($data);
-        echo($data[0]['albums'][1]['canciones'][1]['cancion']);
-        echo($data[0]['albums'][1]['album']);
+        $this->response(['artistas' => $data]);
+         // $this->view_array($data);
+        // echo($data[0]['albums'][1]['canciones'][1]['cancion']);
+        // echo($data[0]['albums'][1]['album']);
     }
 
 }
