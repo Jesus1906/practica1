@@ -22,10 +22,16 @@
                 <th>Duración</th>
             </thead>
             <tbody ng-repeat="artista in artistas">
+                <tr>
                 <td>{{artista.artista}}</td>
-                <td>{{artista.albums}}</td>
-                <td></td>
-                <td></td>
+                <td ng-repeat="album in artista.albums">{{album.album}}</td>
+                <td ng-repeat="album in artista.albums">{{album.anio}}
+                    <p ng-repeat="cancion in album.canciones">{{cancion.cancion}}</p>
+                </td>
+                </tr>
+                
+                
+                <!-- <td ng-repeat="cancion in artista.albums.canciones">{{cancion.cancion}}</td> -->
                 <td></td>
             </tbody>
         </table>

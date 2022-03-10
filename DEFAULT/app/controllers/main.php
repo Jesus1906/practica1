@@ -29,6 +29,22 @@ class Main extends Controller
         $this->response(['canciones'=>$canciones]);
     }
 
+    // public function get_all_info()
+    // {
+    //     $data = $this->model->get_all_artistas();
+    //     foreach ($data as &$artista) { //& agrega los arreglos y/o datos hijos
+    //         $artista['albums'] = $this->model->get_all_albums_by_artista_id($artista['id']);
+    //         foreach($artista['albums'] as &$album){
+    //             $album['canciones'] = $this->model->get_all_canciones_by_album_id($album['id']);
+    //         }
+    //     }
+    //     $this->response(['artistas' => $data]);
+    //      // $this->view_array($data);
+    //     // echo($data[0]['albums'][1]['canciones'][1]['cancion']);
+    //     // echo($data[0]['albums'][1]['album']);
+    // }
+
+
     public function get_all_info()
     {
         $data = $this->model->get_all_artistas();
@@ -43,5 +59,4 @@ class Main extends Controller
         // echo($data[0]['albums'][1]['canciones'][1]['cancion']);
         // echo($data[0]['albums'][1]['album']);
     }
-
 }
